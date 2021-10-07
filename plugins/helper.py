@@ -71,7 +71,14 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-
+@Client.on_message(filters.command('about') & filters.private)
+async def about(bot, message):
+        await message.reply_chat_action("typing")
+        await message.reply_text(
+            text=ABOUT,
+            disable_web_page_preview=True,
+            reply_markup=ABOUT_BUTTONS
+        )
 
 @Client.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
@@ -92,11 +99,4 @@ async def help(bot, message):
             reply_markup=HELP_BUTTONS
         )
       
- @Client.on_message(filters.command('about') & filters.private)
-async def about(bot, message):
-        await message.reply_chat_action("typing")
-        await message.reply_text(
-            text=ABOUT,
-            disable_web_page_preview=True,
-            reply_markup=ABOUT_BUTTONS
-        )
+
