@@ -91,3 +91,12 @@ async def help(bot, message):
             disable_web_page_preview=True,
             reply_markup=HELP_BUTTONS
         )
+      
+ @Client.on_message(filters.command('about') & filters.private)
+async def help(bot, message):
+        await message.reply_chat_action("typing")
+        await message.reply_text(
+            text=ABOUT,
+            disable_web_page_preview=True,
+            reply_markup=ABOUT_BUTTONS
+        )
