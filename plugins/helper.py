@@ -47,8 +47,7 @@ Send As This Format**
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Channel Linkz', url='https://telegram.dog/NklRockers'),
         ]]
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
