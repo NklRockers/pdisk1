@@ -42,6 +42,14 @@ Send As This Format**
 ➢ Join Our Channel @NklRockers**
 """
 
+ABOUT = """
+Hi!
+        
+This Is PDisk Bot Made By @NklRockers Team
+
+For More Movies Join @NklRockers
+"""
+
 # NON_OWNER = "You Can't Use Me Ask My [Owner](tg://user?id={})"
 
 
@@ -55,6 +63,11 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Channel Linkz', url='https://telegram.dog/NklRockers'),
         ],[
         InlineKeyboardButton('Share Now', url='https://telegram.dog/share/url?url=https://telegram.dog/Pdisk_Uploader_Nkl_Bot'),
+        ]]
+    )
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Channel Linkz', url='https://telegram.dog/NklRockers'),
         ]]
     )
 
