@@ -93,7 +93,7 @@ async def help(bot, message):
         )
       
  @Client.on_message(filters.command('about') & filters.private)
-async def help(bot, message):
+async def about(bot, message):
         await message.reply_chat_action("typing")
         await message.reply_text(
             text=ABOUT,
