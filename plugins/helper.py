@@ -22,11 +22,11 @@ Hi {}!
 This Is PDisk Bot For Free 😇
 Read /help Carefully & Do Follow All Given Instruction...
 
-For More Bots Join @HeimanSupports
+For More Movies Join @NklRockers
 """
 
 HELP = """
-**Send Me Direct Download Link Like Mirror Or From @LinkXGenBot.
+**Send Me Direct Download Link Like Mirror Or From @DirectLinkGeneratorbot.
 
 Send As This Format**
 
@@ -38,7 +38,8 @@ Send As This Format**
 
 **NOTE:
 ➢ Do Not Spam, Send Link One By One
-➢ To Know Status Just Go To cofilink.com/home**
+➢ To Know Status Just Go To cofilink.com/home
+➢ Join Our Channel @NklRockers**
 """
 
 # NON_OWNER = "You Can't Use Me Ask My [Owner](tg://user?id={})"
@@ -52,11 +53,9 @@ START_BUTTONS = InlineKeyboardMarkup(
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📮 Update 📮', url='https://telegram.dog/HeimanSupports/'),
-        InlineKeyboardButton('🛠️ Support 🛠️', url='https://telegram.dog/HeimanSupport/'),
+        InlineKeyboardButton('Channel Linkz', url='https://telegram.dog/NklRockers'),
         ],[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Share Now', url='https://telegram.dog/share/url?url=https://telegram.dog/Pdisk_Uploader_Nkl_Bot'),
         ]]
     )
 
@@ -66,7 +65,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 async def start(bot, message):
         await message.reply_chat_action("typing")
         await message.reply_text(
-            text=START.format(message.chat.mention),
+            text=START,
             disable_web_page_preview=True,
             reply_markup=START_BUTTONS
         )
